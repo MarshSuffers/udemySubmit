@@ -1,27 +1,27 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const item1 = {
-    name: 'notebook',
+    name: "notebook",
     price: 5,
-    inStock: true
+    inStock: true,
 };
 const item2 = {
-    name: 'pencil',
+    name: "pencil",
     price: 1,
-    inStock: true
+    inStock: true,
 };
 const item3 = {
-    name: 'eraser',
+    name: "eraser",
     price: 2,
-    inStock: false
+    inStock: false,
 };
 const productList = [item1, item2, item3];
 //Prints inventory list to console and returns void
 function list() {
     let List = productList.toString;
     console.log(List);
+    console.log('test');
+    console.log(productList);
 }
-;
 //filters and returns only availible products
 function listAvailible() {
     //get array
@@ -35,4 +35,3 @@ function listValue() {
     // filters out the values and adds them
     // returns string with value
 }
-//# sourceMappingURL=inventory.js.map
