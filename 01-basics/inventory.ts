@@ -21,24 +21,26 @@ const item3: product = {
 const productList = [item1, item2, item3];
 
 //Prints inventory list to console and returns void
-function list() {
-  let List = productList.toString;
-  console.log(List);
-  console.log('test');
+function list(): void {
   console.log(productList);
 }
 
 //filters and returns only availible products
 function listAvailible() {
-  //get array
-  // filter for instock=true
-  // creates new array
-  //returns new array
+  const availible = productList.filter((product) => product.inStock === true);
+  console.log(availible);
 }
 
 //calculates and returns value of all products
 function listValue() {
-  // gets array
-  // filters out the values and adds them
-  // returns string with value
+  let total: number = 0;
+  for (let index = 0; index < productList.length; index++) {
+    const itemPrice = productList[`${index}`].price;
+    total = total + itemPrice;
+  }
+  console.log(total);
 }
+
+list();
+listAvailible();
+listValue();
