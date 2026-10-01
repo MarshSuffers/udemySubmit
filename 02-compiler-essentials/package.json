@@ -1,0 +1,13 @@
+{
+  "name": "02-compiler-essentials",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0"
+  }
+}
